@@ -10,6 +10,7 @@ end
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 require("toggleterm").setup{
+    shell = vim.fn.has('win32') and 'powershell.exe' or 'pwsh',
     size = 50, 
     open_mapping = [[<c-\>]],
     direction = "vertical",
