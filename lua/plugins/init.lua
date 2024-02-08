@@ -1,0 +1,8 @@
+require("plugins.base")
+require("plugins.keymap")
+require("plugins.lazy")
+require("plugins.lsp")
+require("plugins.terminal")
+require("plugins.telescope")
+require("plugins.theme")
+require("plugins.gitblame")
