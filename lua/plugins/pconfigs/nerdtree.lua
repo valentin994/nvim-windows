@@ -1,3 +1,7 @@
 return {
-    'preservim/nerdtree' 
+    'preservim/nerdtree', 
+    lazy = false,
+    dependencies = {
+        'ryanoasis/vim-devicons'
+    }
 }
