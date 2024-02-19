@@ -64,6 +64,8 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
+lspconfig.html.setup{}
+lspconfig.tailwindcss.setup{}
 lspconfig.tsserver.setup {}
 lspconfig.svelte.setup{}
 lspconfig.rust_analyzer.setup {
