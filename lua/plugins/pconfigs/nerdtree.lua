@@ -36,15 +36,8 @@ return {
             group_empty = true,
           },
           filters = {
-            dotfiles = true,
+            dotfiles = false,
           },
         }
   end,
 }
--- return {
---     'nvim-tree/tree.lua', 
---     lazy = false,
---     dependencies = {
---         'nvim-tree/nvim-web-devicons'
---     }
--- }
