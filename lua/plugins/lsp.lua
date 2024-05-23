@@ -67,6 +67,8 @@ lspconfig.pyright.setup {}
 lspconfig.html.setup{}
 lspconfig.tailwindcss.setup{}
 lspconfig.tsserver.setup {}
+lspconfig.docker_compose_language_service.setup{}
+lspconfig.dockerls.setup{}
 lspconfig.svelte.setup{}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
