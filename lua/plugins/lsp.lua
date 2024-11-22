@@ -70,10 +70,25 @@ lspconfig.tsserver.setup {}
 lspconfig.docker_compose_language_service.setup{}
 lspconfig.dockerls.setup{}
 lspconfig.svelte.setup{}
+lspconfig.ccls.setup{
+lsp = {
+        codelens = {
+            enable = true,
+            events = {"BufWritePost", "InsertLeave"}
+        }
+    }
+ }
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-    ['rust-analyzer'] = {},
+    ['rust-analyzer'] = {
+            check = {
+                command = "clippy";
+            },
+            diagnostics = {
+                enable = true;
+            }
+         },
   },
 }
 
